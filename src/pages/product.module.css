@@ -1,0 +1,265 @@
+div.product_visual {
+  background: url('/public/images/testbg2.png') no-repeat center;
+  background-size: cover;
+}
+
+div#product_wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 120px;
+  width: 100%;
+}
+
+section#product {
+  width: 1200px;
+}
+
+ul#product_category {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+ul#product_category>li {
+  margin: 0 22px;
+}
+
+ul#product_category>li>a {
+  position: relative;
+  left: 0;
+  top: 0;
+
+  display: block;
+  font: 300 16px/24px 'Noto Sans KR';
+  color: #4a4a4a;
+}
+
+ul#product_category>li>a.selected {
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index: 1;
+
+  font-weight: 500;
+  color: #8B5848;
+}
+
+ul#product_category>li>a.selected::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+
+  width: 100%;
+  height: 9px;
+  background: #FFE3CB;
+}
+
+/*  */
+ul#product_list {
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 55px;
+}
+
+div.product_list_img{
+  padding: 20%;
+  margin-bottom: 10px;
+  border: 1px solid #e7e7e7;
+  box-sizing: border-box;
+}
+
+div.product_list_img img {
+  display: block;
+  max-width: 100%;
+  width: auto;
+}
+
+p.product_list_category {
+  font: 500 14px/21px 'Noto Sans KR';
+  color: #8B5848;
+}
+
+p.product_list_title {
+  font: 400 16px/24px 'Noto Sans KR';
+  color: #222;
+
+  word-break: break-all;
+}
+
+p.product_list_text {
+  font: 300 14px/21px 'Noto Sans KR';
+  color: #777;
+}
+
+/*  */
+div#product_btn_wrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+ul#product_num {
+  display: flex;
+  justify-content: center;
+}
+
+ul#product_num>li {
+  margin: 0 3px;
+  width: 37px;
+  height: 37px;
+}
+
+ul#product_num>li>a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border: 1px solid #C8C8C8;
+
+  font: 300 16px/37px 'Noto Sans KR';
+  color: #222;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+ul#product_num>li>a.selected {
+  background: #E4C1A1;
+  border: none;
+  color: #fff;
+}
+/*  */
+div#product_banner_wrap {
+  margin-bottom: 120px;
+  width: 100%;
+  /* height: 350px; */
+  height: 300px;
+  background: #E4C1A1;
+  background: url('/public/images/bannertest.png') no-repeat center;
+  background-size: cover;
+
+  font: 700 40px/350px 'Noto Sans KR';
+  text-align: center;
+  color: #fff;
+}
+
+/*  */
+div#product_weekly_wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 300px;
+  width: 100%;
+}
+
+section#product_weekly {
+  width: 1200px;
+}
+
+ul#product_weekly_list {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 40px;
+}
+
+ul#product_weekly_list>li {
+  /* background: #faa; */
+  height: 270px;
+  border: 1px solid #D1D1D1;
+  box-sizing: border-box;
+}
+
+ul#product_weekly_list>li>a {
+  display: block;
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+ul#product_weekly_list>li img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+ul#product_weekly_list>li:nth-child(1) {
+  grid-column: 1/3;
+  grid-row: 1/3;
+  height: 580px;
+}
+
+ul#product_weekly_list>li:nth-child(2) {
+  grid-column: 3/5;
+}
+
+div.product_weekly_box {
+  position: absolute;
+  left: 0;
+  bottom: 0;  
+
+  padding: 15px;
+  width: 100%;
+  /* height: 80px; */
+  background: rgba(0,0,0,0.4);
+  box-sizing: border-box;
+}
+
+div.product_weekly_box>p:nth-child(1) {
+  font: 500 16px/24px 'Noto Sans KR';
+  color: #fff;
+
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+
+div.product_weekly_box>p:nth-child(2) {
+  font: 300 14px/21px 'Noto Sans KR';
+  color: #fff;
+}
+
+
+
+
+
+@media screen and (max-width:1200px) {
+  section#product {
+    width: 95%;
+  }
+
+  section#product_weekly {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  ul#product_list {
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 25px;
+  }
+
+  ul#product_weekly_list {
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 25px;
+  }
+
+  ul#product_weekly_list>li {
+    height: 350px;
+  }
+
+  ul#product_weekly_list>li:nth-child(1) {
+    grid-column: auto;
+    grid-row: auto;
+    height: 350px;
+  }
+  
+  ul#product_weekly_list>li:nth-child(2) {
+    grid-column: auto;
+  }
+}

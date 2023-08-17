@@ -1,0 +1,134 @@
+[
+  {
+    "id":"0",
+    "image":"/images/item00.png",
+    "category":"사료",
+    "title":"마주리 고슴도치 사료",
+    "price":"16700",
+    "text":"동물복지에 대한 기준이 우리보다 훨씬 업격한 미국에서 생산된 사료입니다.",
+    "delivery":"19800",
+    "isBest":true,
+    "isWeekly":false
+  },
+  {
+    "id":"1",
+    "image":"/images/item01.png",
+    "category":"간식",
+    "title":"마루칸 하무하무 식빵 소동물간식",
+    "price":"4900",
+    "text":"먹고 있는 행동이 너무 귀여워서 탄생하였다! 마루칸 하무하무 식빵",
+    "delivery":"19800",
+    "isBest":true,
+    "isWeekly":true
+  },
+  {
+    "id":"2",
+    "image":"/images/item02.png",
+    "category":"위생",
+    "title":"쉬즈곤 반려동물 냄새 제거 항균 탈취제",
+    "price":"12900",
+    "text":"",
+    "delivery":"19800",
+    "isBest":true,
+    "isWeekly":false
+  },
+  {
+    "id":"3",
+    "image":"/images/item03.png",
+    "category":"의약품",
+    "title":"셔우드 소동물 소화건강 영양제",
+    "price":"33500",
+    "text":"",
+    "delivery":"19800",
+    "isBest":true,
+    "isWeekly":false
+  },
+  {
+    "id":"4",
+    "image":"/images/item04.png",
+    "category":"사료",
+    "title":"네츄럴 포뮬러 프리미엄 고슴도치사료",
+    "price":"13500",
+    "text":"",
+    "delivery":"19800",
+    "isBest":true,
+    "isWeekly":true
+  },
+  {
+    "id":"5",
+    "image":"/images/item05.png",
+    "category":"간식",
+    "title":"쥬맥스 반려동물 러블리 애니멀 당근칩 간식",
+    "price":"9500",
+    "text":"",
+    "delivery":"19800",
+    "isBest":true,
+    "isWeekly":false
+  },
+  {
+    "id":"6",
+    "image":"/images/item06.png",
+    "category":"위생",
+    "title":"휘슬 허브4 약용 반려동물 샴푸",
+    "price":"9250",
+    "text":"",
+    "delivery":"19800",
+    "isBest":true,
+    "isWeekly":true
+  },
+  {
+    "id":"7",
+    "image":"/images/item07.png",
+    "category":"의약품",
+    "title":"비타폴 콕시빗 포르테 영양제",
+    "price":"29900",
+    "text":"",
+    "delivery":"19800",
+    "isBest":true,
+    "isWeekly":false
+  },
+  {
+    "id":"8",
+    "image":"/images/item08.png",
+    "category":"사료",
+    "title":"피에스피 하루두끼 스페셜 고슴도치 사료",
+    "price":"12700",
+    "text":"",
+    "delivery":"19800",
+    "isBest":false,
+    "isWeekly":false
+  },
+  {
+    "id":"9",
+    "image":"/images/item09.png",
+    "category":"간식",
+    "title":"제로랩스 반려동물 꽁꽁가득 동결건조 간식",
+    "price":"13010",
+    "text":"",
+    "delivery":"19800",
+    "isBest":false,
+    "isWeekly":true
+  },
+  {
+    "id":"10",
+    "image":"/images/item10.png",
+    "category":"위생",
+    "title":"모모팜 슬림 쉐이빙 아스펜 베딩",
+    "price":"12510",
+    "text":"",
+    "delivery":"19800",
+    "isBest":false,
+    "isWeekly":false
+  },
+  {
+    "id":"11",
+    "image":"/images/item11.png",
+    "category":"의약품",
+    "title":"소동물용 분유 영양보충제 파우더밀크",
+    "price":"1000",
+    "text":"",
+    "delivery":"19800",
+    "isBest":false,
+    "isWeekly":false
+  }
+]

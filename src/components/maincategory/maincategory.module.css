@@ -1,0 +1,75 @@
+/* ==============CATEGORY============== */
+div#category_wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 120px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+section#category {
+  width: 1200px;
+}
+
+ul#category_list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+ul#category_list>li {
+  width: 180px;
+  height: 180px;
+  background: #FFF8F2;
+  text-align: center;
+
+  /* border-radius: 50%; */
+  border-radius: 30px;
+}
+
+ul#category_list>li>a {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  
+  width: 100%;
+  height: 100%;
+}
+
+ul#category_list>li img {
+  /* margin-bottom: 20px;
+  width: 82px; */
+  margin-bottom: 10px;
+  width: 65px;
+}
+
+ul#category_list>li p{
+  font:300 16px/24px 'Noto Sans KR';
+  color: #4A4A4A;
+}
+
+
+@media screen and (max-width:1200px) {
+  /* category */
+  section#category {
+    width: 95%;
+  }
+
+  ul#category_list>li {
+    width: 15%;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  ul#category_list {
+    justify-content: center;
+  }
+
+  ul#category_list>li {
+    margin: 10px;
+    width: 28%;
+  }
+  
+}

@@ -1,0 +1,60 @@
+/* ==============EVENT============== */
+div#event_wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 200px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+section#event {
+  width: 1200px;
+}
+
+ul#event_list {
+  margin-bottom: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul#event_list>li {
+  width: 350px;
+}
+
+ul#event_list>li>a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+ul#event_list>li img {
+  max-width: 100%;
+  width: auto;
+}
+
+a#event_more {
+  display: block;
+  margin: 0 auto;
+  width: 140px;
+  height: 50px;
+  background: #E4C1A1;
+  border-radius: 50px;
+
+  font:500 16px/50px 'Noto Sans KR';
+  color: #fff;
+  text-align: center;
+}
+
+
+@media screen and (max-width:1200px) {
+  /* event */
+  section#event {
+    width: 95%;
+  }
+
+  ul#event_list>li {
+    width: 32%;
+  }
+}

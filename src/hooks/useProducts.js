@@ -1,0 +1,26 @@
+import axios from 'axios';
+import React, { useEffect, useState } from 'react'
+import { getProducts } from '../api/firebase';
+
+export default function useProducts() {
+  
+  const [allProduct, setAllProduct] = useState([]);
+
+  useEffect(()=>{
+    // axios.get('/data/product.json').then((res)=>{
+    //   setAllProduct(res.data)
+    // })
+
+    getProducts().then((res)=>{
+      setAllProduct(res) //axios에서는 res.data로 써야하지만 firebase에서 끌어올땐 data를 쓸필요가없다
+    })
+
+    
+  }, [])
+
+  return (
+    // 컴포넌트가 아니라서 이름 대문자로 안해도댐
+    // costom hook. 결국 훅도 함수다
+    [allProduct]//값만 리턴, html이아니고 내가사용할 결과값만 리턴하는거
+  )
+}

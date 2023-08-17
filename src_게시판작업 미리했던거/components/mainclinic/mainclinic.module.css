@@ -1,0 +1,61 @@
+/* ==============Clinic============== */
+
+div#mainclinic_wrap {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 120px;
+  width: 100%;
+  min-height: 660px;
+  background: url('/public/images/clinic_bg.jpg')no-repeat left center;
+  background-size: cover;
+}
+
+section#mainclinic {
+  width: 1200px;
+  min-height: 660px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+section#mainclinic>p {
+  margin-bottom: 30px;
+  font:300 20px/30px 'Noto Sans KR';
+  color: #585858;
+}
+
+section#mainclinic>form {
+  display: flex;
+}
+
+section#mainclinic>form>input {
+  padding: 0 15px;
+  margin-right: 20px;
+  width: 535px;
+  height: 70px;
+  background: #fff;
+  border: 1px solid #3C3C3C;
+  box-sizing: border-box;
+  font:300 20px/30px 'Noto Sans KR';
+  color: #585858;
+}
+
+section#mainclinic>form>button {
+  width: 70px;
+  height: 70px;
+  background: #8B5848;
+  border: none;
+  color: #fff;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+
+
+@media screen and (max-width:1200px) {
+  section#mainclinic {
+    width: 95%;
+  }
+}

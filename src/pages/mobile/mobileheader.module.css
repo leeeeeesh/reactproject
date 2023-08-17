@@ -1,0 +1,30 @@
+div#mobile_header_wrap {
+  padding: 8vw 0;
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+div#mobile_header_wrap>header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 86.7%;
+  /* background: #faa; */
+}
+
+p#mobile_menu {
+  width: 4.8vw;
+}
+
+p#mobile_menu>img {
+  display: block;
+  max-width: 36px;
+  width: 100%;
+}
+
+a#mobile_header_login {
+  font-size: 3.73vw;
+}
