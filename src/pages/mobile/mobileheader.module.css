@@ -129,6 +129,28 @@ ul#mobile_menu_list>li.selected>span {
   transform: rotate(90deg);
 }
 
+div#mobile_user_wrap{
+  display: flex;
+}
+
+div#mobile_user_wrap>p:nth-child(1) {
+  margin-right: 3vw;
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+div#mobile_user_wrap>p:nth-child(1)>img {
+  display: block;
+  width: 100%;
+}
+
+div#mobile_user_wrap>p:nth-child(2){
+  font: 500 4vw/10vw 'Noto Sans KR';
+  color: #444;
+}
+
 ul#mobile_submenu_list {
   padding: 0 3vw;
   background: #FFF1E4;

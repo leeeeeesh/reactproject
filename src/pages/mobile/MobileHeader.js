@@ -1,7 +1,12 @@
-import React, { useCallback, useMemo, useRef, useState } from 'react'
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import styles from './mobileheader.module.css'
 import { gsap } from 'gsap';
+
+import { login, logout, onUserStateChange } from '../../api/firebase';
+import { useAuthContext } from '../../context/AuthContext';
+
+
 
 export default function MobileHeader() {
 
@@ -40,6 +45,11 @@ export default function MobileHeader() {
   const mobileMenuWrap = useRef();
   const mobileGrayLayer = useRef();
 
+  useEffect(()=>{
+    gsap.set(mobileGrayLayer.current,{display:'none'})
+    gsap.set(mobileMenuWrap.current,{left:'-76vw'})
+  },[])
+
   const mobileMenuWrapOpen = useCallback(()=>{
     // useRef로 지정한애는 지정한이름.current 으로 써야 사용할수있다.
     gsap.to(mobileGrayLayer.current,{display:'block'})
@@ -56,7 +66,8 @@ export default function MobileHeader() {
   },[])
 
   const [selectIndex,setSelectIndex] = useState()
-  console.log(selectIndex)
+  
+  const {user} = useAuthContext()
 
   return (
     <div id={styles.mobile_header_wrap}>
@@ -76,16 +87,34 @@ export default function MobileHeader() {
           </p>
           
           <div id={styles.mobile_login_wrap}>
-            <p>로그인 해주세요.</p>
-            <ul id={styles.mobile_loginbtn_list}>
-              <li>
-                <button>로그인</button>
-              </li>
+            {
+              user ?
+              <>
+                <div id={styles.mobile_user_wrap}>
+                  <p><img src={user.photoURL}/></p>
+                  <p>{user.displayName} 님</p>
+                </div>
 
-              <li>
-                <button>회원가입</button>
-              </li>
-            </ul>
+                <ul id={styles.mobile_loginbtn_list}>
+                  <li>
+                    <button onClick={logout}>로그아웃</button>
+                  </li>
+                </ul>
+              </>
+              :
+              <>
+                <p>로그인 해주세요.</p>
+                <ul id={styles.mobile_loginbtn_list}>
+                  <li>
+                    <button onClick={login}>로그인</button>
+                  </li>
+
+                  <li>
+                    <button>회원가입</button>
+                  </li>
+                </ul>
+              </>
+            }
           </div>
 
           <ul id={styles.mobile_menu_list}>
@@ -120,36 +149,7 @@ export default function MobileHeader() {
               ))
             }
 
-            {/* <li>
-              <p>홈</p>
-            </li>
-            <li>
-              <p>분양안내</p>
-              <span><i className="fa-solid fa-angle-right"></i></span>
-              <ul id={styles.mobile_submenu_list}>
-                <li>
-                  <Link>submenu</Link>
-                </li>
-                <li>
-                  <Link>submenu</Link>
-                </li>
-                <li>
-                  <Link>submenu</Link>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <p>병원검색</p>
-              <span><i className="fa-solid fa-angle-right"></i></span>
-            </li>
-            <li>
-              <p>상품</p>
-              <span><i className="fa-solid fa-angle-right"></i></span>
-            </li>
-            <li>
-              <p>이벤트</p>
-              <span><i className="fa-solid fa-angle-right"></i></span>
-            </li> */}
+          
           </ul>
         </nav>
 
