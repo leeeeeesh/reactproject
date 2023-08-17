@@ -20,10 +20,10 @@ import { AuthContextProvider } from "./context/AuthContext";
 
 export default function App() {
 
-  //let router = null 
+  let router = null 
 
-  //if(isMobile){//만약 모바일환경이라면(isMobile) 아래것을 보여줘라
-    const router = createBrowserRouter([
+  if(isMobile){//만약 모바일환경이라면(isMobile) 아래것을 보여줘라
+    router = createBrowserRouter([
       {
         path:'/',
         element:<MobileRoot/>,
@@ -36,16 +36,52 @@ export default function App() {
         ]
       }
     ])
-  // 
-
+  }else{
+    router = createBrowserRouter([
+      {
+        path:'/',
+        element:<Root/>,
+        children:[
+          {
+            index:true,
+            element:<Home/>
+          },
+          {
+            path:'/info',
+            element:<Info/>
+          },
+          {
+            path:'/clinic',
+            element:<Clinic/>
+          },
+          {
+            path:'/product',
+            element:<Product/>
+          },
+          {
+            path:'/product/:productId',
+            element:<ProductDetail/>
+          },
+          {
+            path:'/event',
+            element:<Event/>
+          },
+          {
+            path:'/login',
+            element:<Login/>
+          },
+        ]
+      }
+    ])
+  }
 
   return (
     // 모든페이지들에 로그인 로그아웃을 적용시켜줘야하기때문에 AuthContextProvider 로 RouterProvider 을 감싸줌
-    
+    <div>
       <AuthContextProvider>
         <RouterProvider router={router}/>
       </AuthContextProvider>
-   
+    </div>
   );
 }
 
