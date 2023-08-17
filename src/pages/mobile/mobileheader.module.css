@@ -15,11 +15,11 @@ div#mobile_header_wrap>header {
   /* background: #faa; */
 }
 
-p#mobile_menu {
+p#mobile_menu_open {
   width: 4.8vw;
 }
 
-p#mobile_menu>img {
+p#mobile_menu_open>img {
   display: block;
   max-width: 36px;
   width: 100%;
@@ -27,4 +27,115 @@ p#mobile_menu>img {
 
 a#mobile_header_login {
   font-size: 3.73vw;
+}
+
+nav#mobile_menu {
+  padding: 8vw 4vw;
+  width: 76vw;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: 999;
+
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+div#mobile_graylayer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 990;
+}
+
+p#mobile_menu_close {
+  margin-bottom: 8vw;
+  /* font-size: 36px; */
+  font-size: 6vw;
+  color: #8B5848;
+  box-sizing: border-box;
+}
+
+div#mobile_login_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10vw;
+}
+
+div#mobile_login_wrap>p {
+  font: 600 4vw 'Noto Sans KR';
+}
+
+ul#mobile_loginbtn_list {
+  display: flex;
+  align-items: center;
+}
+
+ul#mobile_loginbtn_list>li>button {
+  padding: 1.4vw 3.5vw;
+  font: 400 3vw 'Noto Sans KR';
+  color: #fff;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 50px;
+}
+
+ul#mobile_loginbtn_list>li:nth-child(1) {
+  margin-right: 2vw;
+}
+
+ul#mobile_loginbtn_list>li:nth-child(1)>button {
+  background: #AD7F70;
+}
+
+ul#mobile_loginbtn_list>li:nth-child(2)>button {
+  background: #8B5848;
+}
+
+ul#mobile_menu_list>li {
+  position: relative;
+  left: 0;
+  top: 0;
+
+  /* height: 10vw; */
+  /* background: #eee; */
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+ul#mobile_menu_list>li>p {
+  font: 700 3vw/10vw 'Noto Sans KR';
+  color: #333;
+}
+
+ul#mobile_menu_list>li>span {
+  position: absolute;
+  top: 3vw;
+  right: 0;
+
+  display: block;
+  font: 700 3vw/3vw 'Noto Sans KR';
+  transition: 0.3s;
+}
+
+ul#mobile_menu_list>li.selected>span {
+  transform: rotate(90deg);
+}
+
+ul#mobile_submenu_list {
+  padding: 0 3vw;
+  background: #FFF1E4;
+  box-sizing: border-box;
+}
+
+ul#mobile_submenu_list>li>a {
+  display: block;
+  font: 300 2.8vw/39px 'Noto Sans KR';
 }
