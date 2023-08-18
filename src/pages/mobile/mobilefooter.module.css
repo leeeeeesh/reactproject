@@ -1,3 +1,49 @@
 div#mobile_footer_wrap {
-  background: #aaf;
+  padding: 8vw 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  background: #5B3C32;
+  box-sizing: border-box;
+}
+
+div#mobile_footer_wrap>footer {
+  display: flex;
+  justify-content: space-between;
+
+  width: 86.7%;
+}
+
+div#mobile_footer_sns>img {
+  margin-bottom: 2.6vw;
+  width: 25vw;
+}
+
+ul#mobile_sns_list {
+  display: flex;
+}
+
+ul#mobile_sns_list>li {
+  margin-right: 2vw;
+  width: 5vw;
+  height: 5vw;
+  background: #fff;
+  font-size: 3vw;
+  line-height: 5vw;
+  text-align: center;
+}
+
+div#mobile_footer_contact {
+  width: 53.3vw;
+}
+
+div#mobile_footer_contact>h3 {
+  color: #fff;
+}
+
+div#mobile_footer_contact>ul>li {
+  font: 300 3.07vw 'Noto Sans KR';
+  color: #fff;
 }

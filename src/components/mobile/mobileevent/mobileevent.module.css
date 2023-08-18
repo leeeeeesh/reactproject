@@ -46,6 +46,7 @@ ul#mobileevent_list>li>a {
 }
 
 ul#mobileevent_list>li>a>img {
+  display: block;
   max-width: 100%;
   width: auto;
 }
