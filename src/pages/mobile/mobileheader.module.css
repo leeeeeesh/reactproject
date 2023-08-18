@@ -71,7 +71,7 @@ div#mobile_login_wrap {
 }
 
 div#mobile_login_wrap>p {
-  font: 600 4vw 'Noto Sans KR';
+  font: 600 4.3vw 'Noto Sans KR';
 }
 
 ul#mobile_loginbtn_list {
@@ -81,7 +81,7 @@ ul#mobile_loginbtn_list {
 
 ul#mobile_loginbtn_list>li>button {
   padding: 1.4vw 3.5vw;
-  font: 400 3vw 'Noto Sans KR';
+  font: 400 3.07vw 'Noto Sans KR';
   color: #fff;
   box-sizing: border-box;
   border: none;
@@ -112,7 +112,7 @@ ul#mobile_menu_list>li {
 }
 
 ul#mobile_menu_list>li>p {
-  font: 700 3vw/39px 'Noto Sans KR';
+  font: 700 3.07vw/39px 'Noto Sans KR';
   color: #333;
 }
 
@@ -160,5 +160,5 @@ ul#mobile_submenu_list {
 
 ul#mobile_submenu_list>li>a {
   display: block;
-  font: 300 2.8vw/39px 'Noto Sans KR';
+  font: 300 3vw/39px 'Noto Sans KR';
 }
