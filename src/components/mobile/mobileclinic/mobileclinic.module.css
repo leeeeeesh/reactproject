@@ -1,0 +1,19 @@
+div#mobileclinic_wrap {
+  margin-bottom: 8vw;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+section#mobileclinic {
+  width: 86.7%;
+}
+
+h2.mobileclinic_titie {
+  font: 700 3vw 'Noto Sans KR';
+}
+
+p.mobileclinic_text {
+  font: 300 2.1vw 'Noto Sans KR';
+  color: #585858;
+}

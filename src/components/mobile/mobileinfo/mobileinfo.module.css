@@ -1,0 +1,29 @@
+div#mobileinfo_wrap {
+  margin-bottom: 8vw;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+section#mobileinfo {
+  padding: 4.6vw;
+  width: 86.7%;
+  background: #E9CDB3;
+  border-radius: 4vw;
+  box-sizing: border-box;
+}
+
+section#mobileinfo>h2 {
+  font: 700 3vw 'Noto Sans KR';
+  color: #fff;
+}
+
+section#mobileinfo>a {
+  font: 400 2.1vw 'Noto Sans KR';
+  color: #fff;
+}
+
+section#mobileinfo>p {
+  font: 300 2.1vw 'Noto Sans KR';
+  color: #fff;
+}
