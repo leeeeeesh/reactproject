@@ -4,6 +4,7 @@ div#mobile_header_wrap {
   justify-content: center;
   background: #fff;
   box-sizing: border-box;
+  width: 100%;
 }
 
 div#mobile_header_wrap>header {
