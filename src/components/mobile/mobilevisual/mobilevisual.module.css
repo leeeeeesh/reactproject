@@ -29,13 +29,13 @@ div#mobilevisual_title_wrap{
   left: 50%;
   transform: translate(-50%,-50%);
 
-  width: 50vw;
-  height: 16vw;
+  width: 60vw;
+  height: 18vw;
   text-align: center;
 }
 
 div#mobilevisual_title_wrap>h2 {
-  font: 700 5vw 'Noto Sans KR';
+  font: 700 6.5vw 'Noto Sans KR';
   color: #fff;
 }
 
@@ -47,6 +47,6 @@ div#mobilevisual_title_wrap>a {
   border-radius: 50px;
   background: #E4C1A1;
 
-  font: 700 2.1vw/6vw 'Noto Sans KR';
+  font: 700 3.07vw/6vw 'Noto Sans KR';
   color: #fff;
 }

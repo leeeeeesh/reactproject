@@ -6,6 +6,10 @@ div#mobileinfo_wrap {
 }
 
 section#mobileinfo {
+  position: relative;
+  left: 0;
+  top: 0;
+
   padding: 4.6vw;
   width: 86.7%;
   background: #E9CDB3;
@@ -13,17 +17,22 @@ section#mobileinfo {
   box-sizing: border-box;
 }
 
-section#mobileinfo>h2 {
-  font: 700 3vw 'Noto Sans KR';
+h2.mobileinfo_titie {
+  margin-bottom: 4.6vw;
+  font: 700 4.3vw 'Noto Sans KR';
   color: #fff;
 }
 
-section#mobileinfo>a {
-  font: 400 2.1vw 'Noto Sans KR';
+a.mobileinfo_more {
+  position: absolute;
+  top: 4.6vw;
+  right: 4.6vw;
+
+  font: 400 3.07vw 'Noto Sans KR';
   color: #fff;
 }
 
 section#mobileinfo>p {
-  font: 300 2.1vw 'Noto Sans KR';
+  font: 300 3.07vw 'Noto Sans KR';
   color: #fff;
 }
