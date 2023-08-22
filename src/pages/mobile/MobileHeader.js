@@ -50,6 +50,7 @@ export default function MobileHeader() {
     // useRef로 지정한애는 지정한이름.current 으로 써야 사용할수있다.
     gsap.to(mobileGrayLayer.current,{display:'block'})
     gsap.to(mobileMenuWrap.current,{left:'0'})
+    gsap.set('body,html',{overflow:'hidden'})
   },[])
 
   const mobileMenuWrapClose = useCallback(()=>{
@@ -60,6 +61,7 @@ export default function MobileHeader() {
       }
     })
     gsap.to(mobileGrayLayer.current, {duration:0.3,display:'none'})
+    gsap.set('body,html',{overflow:'visible'})
   },[])
 
   const [selectIndex,setSelectIndex] = useState()
