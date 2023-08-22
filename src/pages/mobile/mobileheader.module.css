@@ -112,7 +112,8 @@ ul#mobile_menu_list>li {
 }
 
 ul#mobile_menu_list>li>p {
-  font: 700 3.07vw/39px 'Noto Sans KR';
+  font: 700 3.5vw/39px 'Noto Sans KR';
+  /* font: 700 3.07vw/39px 'Noto Sans KR'; */
   /* font: 700 3.07vw/10vw 'Noto Sans KR'; */
   color: #333;
 }
@@ -166,6 +167,6 @@ ul#mobile_submenu_list {
 
 ul#mobile_submenu_list>li {
   display: block;
-  font: 300 3vw/39px 'Noto Sans KR';
+  font: 300 3.3vw/39px 'Noto Sans KR';
   /* font: 300 3vw/10vw 'Noto Sans KR'; */
 }

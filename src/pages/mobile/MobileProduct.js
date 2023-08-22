@@ -29,6 +29,7 @@ export default function MobileProduct() {
 
   const [selectCategory,setSelectCategory] = useState(loadData())
   const [mobileProductItem,setMobileProductItem] = useState([])
+  const [mobileWeeklyItem, setMobileWeeklyItem] = useState([])
 
 
   useEffect(()=>{
@@ -67,6 +68,10 @@ export default function MobileProduct() {
 
     window.scrollTo(0,0)
   },[search])
+
+  useEffect(()=>{
+    setMobileWeeklyItem(allProduct.filter((item)=>(item.isWeekly === true)))
+  },[allProduct])
 
   
 
@@ -130,6 +135,26 @@ export default function MobileProduct() {
       </div>
 
       <div id={styles.mobileproduct_banner}></div>
+
+      <div id={styles.mobile_weekly_wrap}>
+        <section id={styles.mobile_weekly}>
+          <h2 className={styles.mobile_weekly_title}>이번주 인기 상품</h2>
+
+          <ul id={styles.mobile_weekly_list}>
+            {
+              mobileWeeklyItem.map((item)=>(
+                <li onClick={() => { navigate(`/product/${item.id}`) }}>
+                  <img src={item.image}/>
+                  <div>
+                    <p>{item.title}</p>
+                    <p>{item.price}원</p>
+                  </div>
+                </li>
+              ))
+            }
+          </ul>
+        </section>
+      </div>
     </>
   )
 }

@@ -174,3 +174,64 @@ div#mobileproduct_banner {
   background: url('/public/images/mobile/mobile_banner.png') no-repeat center;
   background-size: cover;
 }
+
+div#mobile_weekly_wrap {
+  margin-bottom: 8vw;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+section#mobile_weekly {
+  width: 86.7%;
+  box-sizing: border-box;
+}
+
+h2.mobile_weekly_title {
+  margin-bottom: 4.6vw;
+  font: 700 4.3vw 'Noto Sans KR';
+}
+
+ul#mobile_weekly_list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4.61vw;
+}
+
+ul#mobile_weekly_list>li {
+  position: relative;
+  left: 0;
+  top: 0;
+
+  padding: 4vw 4vw 9vw;
+  background: #F3F3F3;
+  border-radius: 4vw;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+ul#mobile_weekly_list>li>img{
+  display: block;
+  width: 100%;
+}
+
+ul#mobile_weekly_list>li>div {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  padding: 2vw 2.6vw;
+  width: 100%;
+  background: rgba(0,0,0,0.4);
+  box-sizing: border-box;
+}
+
+ul#mobile_weekly_list>li>div>p:first-child {
+  font: 500 3.07vw 'Noto Sans KR';
+  color: #fff;
+}
+
+ul#mobile_weekly_list>li>div>p:last-child {
+  font: 300 2.76vw 'Noto Sans KR';
+  color: #fff;
+}
