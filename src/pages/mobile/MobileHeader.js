@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import styles from './mobileheader.module.css'
 import { gsap } from 'gsap';
 
@@ -14,28 +14,24 @@ export default function MobileHeader() {
 
     {index:0,name:'홈',pahtname:'/',subMenuList:[]},
 
-    {index:1,name:'분양안내',pahtname:'/',subMenuList:[
-      {index:0,name:'submenu',pahtname:'/'},
-      {index:1,name:'submenu',pahtname:'/'},
-      {index:2,name:'submenu',pahtname:'/'}
+    {index:1,name:'분양안내',pahtname:'',subMenuList:[
+      {index:0,name:'분양안내',pahtname:'/'}
     ]},
 
-    {index:2,name:'병원검색',pahtname:'/',subMenuList:[
-      {index:0,name:'submenu',pahtname:'/'},
-      {index:1,name:'submenu',pahtname:'/'},
-      {index:2,name:'submenu',pahtname:'/'}
+    {index:2,name:'병원검색',pahtname:'',subMenuList:[
+      {index:0,name:'병원검색',pahtname:'/'}
     ]},
 
-    {index:3,name:'상품',pahtname:'/',subMenuList:[
-      {index:0,name:'submenu',pahtname:'/'},
-      {index:1,name:'submenu',pahtname:'/'},
-      {index:2,name:'submenu',pahtname:'/'}
+    {index:3,name:'상품',pahtname:'',subMenuList:[
+      {index:0,name:'전체',pahtname:'/product'},
+      {index:1,name:'사료',pahtname:'/product'},
+      {index:2,name:'간식',pahtname:'/product'},
+      {index:3,name:'위생',pahtname:'/product'},
+      {index:4,name:'의약품',pahtname:'/product'}
     ]},
     
-    {index:4,name:'이벤트',pahtname:'/',subMenuList:[
-      {index:0,name:'submenu',pahtname:'/'},
-      {index:1,name:'submenu',pahtname:'/'},
-      {index:2,name:'submenu',pahtname:'/'}
+    {index:4,name:'이벤트',pahtname:'',subMenuList:[
+      {index:0,name:'이벤트',pahtname:'/'}
     ]},
   ]
 
@@ -60,14 +56,17 @@ export default function MobileHeader() {
     gsap.to(mobileMenuWrap.current, {
       left:'-76vw',
       onComplete:()=>{
-        gsap.to(mobileGrayLayer.current, {duration:0.3,display:'none'})
+        // gsap.to(mobileGrayLayer.current, {duration:0.3,display:'none'})
       }
     })
+    gsap.to(mobileGrayLayer.current, {duration:0.3,display:'none'})
   },[])
 
   const [selectIndex,setSelectIndex] = useState()
   
   const {user} = useAuthContext()
+  
+  const navigate = useNavigate()
 
   return (
     <div id={styles.mobile_header_wrap}>
@@ -129,7 +128,10 @@ export default function MobileHeader() {
                 }}>
                   {
                     item.subMenuList.length<1 ?
-                    <p>{item.name}</p>
+                    <p onClick={()=>{
+                      navigate(`${item.pahtname}`)
+                      mobileMenuWrapClose()
+                    }}>{item.name}</p>
                     :
                     <>
                       <p>{item.name}</p>
@@ -137,8 +139,12 @@ export default function MobileHeader() {
                       <ul id={styles.mobile_submenu_list}>
                         {
                           item.subMenuList.map((item)=>(
-                            <li key={item.index}>
-                              <Link>{item.name}</Link>
+                            <li key={item.index} onClick={(e)=>{
+                              e.preventDefault()
+                              navigate(`${item.pahtname}`)
+                              mobileMenuWrapClose()
+                            }}>
+                              {item.name}
                             </li>
                           ))
                         }

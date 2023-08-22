@@ -20,6 +20,7 @@ export default function MainCategory() {
           {
             categoryMap.map((item)=>(
               <li key={item.id}>
+                {/* createSearchParams로 임의의 category 를 만듬 */}
                 <Link to={{ pathname: `/product`, search: `?${createSearchParams({ category: item.text })}`}}>
                   <img src={item.image} />
                   <p>{item.text}</p>

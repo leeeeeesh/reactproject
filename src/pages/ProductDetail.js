@@ -173,7 +173,8 @@ export default function ProductDetail() {
 
       <div id={styles.detail_content_wrap}>
         <section id={styles.detail_content}>
-          <img src='/images/testcont.jpg'/>
+          {/* <img src='/images/testcont.jpg'/> */}
+          <img src={productItem.detailImg}/>
         </section>
       </div>
     </>

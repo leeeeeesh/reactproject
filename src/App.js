@@ -15,6 +15,8 @@ import MobileRoot from "./pages/mobile/MobileRoot";
 import MobileHome from "./pages/mobile/MobileHome";
 
 import { AuthContextProvider } from "./context/AuthContext";
+import MobileProduct from "./pages/mobile/MobileProduct";
+import MobileProductDetail from "./pages/mobile/MobileProductDetail";
 
 
 
@@ -31,6 +33,14 @@ export default function App() {
           {
             index:true,
             element:<MobileHome/>
+          },
+          {
+            path:'/product',
+            element:<MobileProduct/>
+          },
+          {
+            path:'/product/:productId',
+            element:<MobileProductDetail/>
           }
           
         ]

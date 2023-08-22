@@ -23,19 +23,19 @@ export default function MainVisual() {
           slidesPerView={1}
           spaceBetween={30}
           loop={true}
-          autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
-          }}
+          // autoplay={{
+          //   delay: 3000,
+          //   disableOnInteraction: false,
+          // }}
           pagination={{
             clickable: true,
           }}
           modules={[Autoplay,Pagination]}
           className='mySwiper'
         >
-          <SwiperSlide></SwiperSlide>
-          <SwiperSlide></SwiperSlide>
-          <SwiperSlide></SwiperSlide>
+          <SwiperSlide><div className={styles.mainvisual_img01}></div></SwiperSlide>
+          <SwiperSlide><div className={styles.mainvisual_img02}></div></SwiperSlide>
+          <SwiperSlide><div className={styles.mainvisual_img03}></div></SwiperSlide>
         </Swiper>
       </section>
     </div>
