@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import { getProductDetail } from '../../api/firebase'
 import Count from '../../components/count/Count'
 import useProducts from '../../hooks/useProducts'
@@ -28,6 +28,8 @@ export default function MobileProductDetail() {
   
   const [mobileSimilarMap,setMobileSimilarMap] = useState([])
 
+  const navigate = useNavigate()
+
   useEffect(()=>{
     getProductDetail(productId).then((res) => {
       setProductItem(res)
@@ -35,6 +37,9 @@ export default function MobileProductDetail() {
       const mobileSimilarItem = allProduct.filter((item)=>(item.category === res.category && item.id !== res.id))
       setMobileSimilarMap(mobileSimilarItem)
     })
+    window.scrollTo(0,0)
+
+    setMoDetailCount(1)
 
   },[allProduct,productId])
 
@@ -82,7 +87,7 @@ export default function MobileProductDetail() {
           <ul id={styles.mobile_similar_list}>
             {
               mobileSimilarMap.map((item)=>(
-                <li>
+                <li onClick={()=>{navigate(`/product/${item.id}`)}}>
                   <img src={item.image}/>
                 </li>
               ))

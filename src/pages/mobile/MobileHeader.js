@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { createSearchParams, Link, useNavigate } from 'react-router-dom'
 import styles from './mobileheader.module.css'
 import { gsap } from 'gsap';
 
@@ -141,7 +141,11 @@ export default function MobileHeader() {
                           item.subMenuList.map((item)=>(
                             <li key={item.index} onClick={(e)=>{
                               e.preventDefault()
-                              navigate(`${item.pahtname}`)
+                              // navigate(`${item.pahtname}`)
+                              navigate({
+                                pathname:'/product',
+                                search:`${createSearchParams({category: item.name})}`
+                              })
                               mobileMenuWrapClose()
                             }}>
                               {item.name}
