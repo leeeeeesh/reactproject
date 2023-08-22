@@ -1,0 +1,66 @@
+div#mobilecategory_wrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+section#mobilecategory {
+  padding: 4.6vw 0 8vw 4.6vw;
+  width: 86.7%;
+  background: #8B5848;
+
+  border-radius: 4vw 4vw 0 0;
+  box-sizing: border-box;
+}
+
+h2.mobilecategory_titie {
+  margin-bottom: 4.6vw;
+  font: 700 4.3vw 'Noto Sans KR';
+  color: #fff;
+}
+
+/* ul#mobilecategory_list {
+  display: flex;
+  width: 100%;
+  overflow: auto;
+}
+
+ul#mobilecategory_list>li {
+  margin-right: 3.07vw;
+  width: 23vw;
+  height: 9.23vw;
+  background: #FFF8F2;
+  border-radius: 100px;
+  flex-shrink: 0;
+}
+
+ul#mobilecategory_list>li>a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font: 600 3.07vw/9.23vw 'Noto Sans KR';
+  text-align: center;
+  color: #4A4A4A;
+} */
+
+div.mobilecategory_list {
+  /* margin-right: 3.07vw; */
+  /* width: 23vw; */
+  height: 9.23vw;
+  background: #FFF8F2;
+  border-radius: 100px;
+  flex-shrink: 0;
+
+  font: 600 3.07vw/9.23vw 'Noto Sans KR';
+  text-align: center;
+  color: #4A4A4A;
+}
+
+div.mobilecategory_list>a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font: 600 3.07vw/9.23vw 'Noto Sans KR';
+  text-align: center;
+  color: #4A4A4A;
+}

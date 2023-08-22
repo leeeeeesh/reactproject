@@ -1,0 +1,148 @@
+{
+  "products": {
+    "001": {
+      "category": "사료",
+      "delivery": "19800",
+      "detailImg": "https://firebasestorage.googleapis.com/v0/b/project-e9ee0.appspot.com/o/detail_00.jpg?alt=media&token=3fbf3c51-996b-4fc6-b8d5-57d5644bbafb",
+      "id": "001",
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-e9ee0.appspot.com/o/item00.png?alt=media&token=4470bd58-5b69-4231-9cb1-7d4d70438e09",
+      "isBest": true,
+      "isWeekly": false,
+      "price": "16700",
+      "text": "동물복지에 대한 기준이 우리보다 훨씬 업격한 미국에서 생산된 사료입니다.",
+      "title": "마주리 고슴도치 사료"
+    },
+    "002": {
+      "category": "간식",
+      "delivery": "19800",
+      "detailImg": "https://firebasestorage.googleapis.com/v0/b/project-e9ee0.appspot.com/o/detail_01.jpg?alt=media&token=d1ccae27-629e-4516-87c9-1b673d28a5ea",
+      "id": "002",
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-e9ee0.appspot.com/o/item01.png?alt=media&token=e7a3d925-217c-49db-9aaf-0fb753c3968d",
+      "isBest": true,
+      "isWeekly": true,
+      "price": "4900",
+      "text": "먹고 있는 행동이 너무 귀여워서 탄생하였다! 마루칸 하무하무 식빵",
+      "title": "마루칸 하무하무 식빵 소동물간식"
+    },
+    "003": {
+      "category": "위생",
+      "delivery": "19800",
+      "detailImg": "https://firebasestorage.googleapis.com/v0/b/project-e9ee0.appspot.com/o/detail_02.jpg?alt=media&token=8fd2b209-d103-4e07-8bfa-2c89a80d7928",
+      "id": "003",
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-e9ee0.appspot.com/o/item02.png?alt=media&token=f1c4cb8d-1fc2-496e-8da8-da7ed672b482",
+      "isBest": true,
+      "isWeekly": false,
+      "price": "12900",
+      "text": "",
+      "title": "쉬즈곤 반려동물 냄새 제거 항균 탈취제"
+    },
+    "004": {
+      "category": "의약품",
+      "delivery": "19800",
+      "detailImg": "https://firebasestorage.googleapis.com/v0/b/project-e9ee0.appspot.com/o/detail_03.jpg?alt=media&token=71089759-bda5-493d-961e-6336e4a25686",
+      "id": "004",
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-e9ee0.appspot.com/o/item03.png?alt=media&token=83fe57ee-b20a-4fba-bd1e-254b9b601880",
+      "isBest": true,
+      "isWeekly": false,
+      "price": "33500",
+      "text": "",
+      "title": "셔우드 소동물 소화건강 영양제"
+    },
+    "005": {
+      "category": "사료",
+      "delivery": "19800",
+      "detailImg": "https://firebasestorage.googleapis.com/v0/b/project-e9ee0.appspot.com/o/detail_04.jpg?alt=media&token=aea1457d-8f9a-4d38-b182-2afd7ce6671f",
+      "id": "005",
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-e9ee0.appspot.com/o/item04.png?alt=media&token=cf3832a0-54f7-457a-8fe7-b0f018a258c7",
+      "isBest": true,
+      "isWeekly": true,
+      "price": "13500",
+      "text": "",
+      "title": "네츄럴 포뮬러 프리미엄 고슴도치사료"
+    },
+    "006": {
+      "category": "간식",
+      "delivery": "19800",
+      "detailImg": "https://firebasestorage.googleapis.com/v0/b/project-e9ee0.appspot.com/o/detail_05.jpg?alt=media&token=0b15a1d4-5782-42f6-be95-90ffd779c66f",
+      "id": "006",
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-e9ee0.appspot.com/o/item05.png?alt=media&token=419866ca-8939-4b0d-9d63-82e76c133bb0",
+      "isBest": true,
+      "isWeekly": false,
+      "price": "9500",
+      "text": "",
+      "title": "쥬맥스 반려동물 러블리 애니멀 당근칩 간식"
+    },
+    "007": {
+      "category": "위생",
+      "delivery": "19800",
+      "detailImg": "https://firebasestorage.googleapis.com/v0/b/project-e9ee0.appspot.com/o/detail_06.jpg?alt=media&token=861a2949-6fc4-47e1-93eb-ca8cd607bb39",
+      "id": "007",
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-e9ee0.appspot.com/o/item06.png?alt=media&token=ea93fab6-20a6-412b-95e0-9767948384a2",
+      "isBest": true,
+      "isWeekly": true,
+      "price": "9250",
+      "text": "",
+      "title": "휘슬 허브4 약용 반려동물 샴푸"
+    },
+    "008": {
+      "category": "의약품",
+      "delivery": "19800",
+      "detailImg": "https://firebasestorage.googleapis.com/v0/b/project-e9ee0.appspot.com/o/detail_07.jpg?alt=media&token=70f2d350-0d24-44e2-858b-b04cb0a869f0",
+      "id": "008",
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-e9ee0.appspot.com/o/item07.png?alt=media&token=a1417844-a384-458a-98fc-41c6b9c664ef",
+      "isBest": true,
+      "isWeekly": false,
+      "price": "29900",
+      "text": "",
+      "title": "비타폴 콕시빗 포르테 영양제"
+    },
+    "009": {
+      "category": "사료",
+      "delivery": "19800",
+      "detailImg": "https://firebasestorage.googleapis.com/v0/b/project-e9ee0.appspot.com/o/detail_08.jpg?alt=media&token=7685b0be-d038-49d2-94c1-2007d7b6aeb1",
+      "id": "009",
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-e9ee0.appspot.com/o/item08.png?alt=media&token=a1231a36-49e2-490c-9794-90d538d167fc",
+      "isBest": false,
+      "isWeekly": false,
+      "price": "12700",
+      "text": "",
+      "title": "피에스피 하루두끼 스페셜 고슴도치 사료"
+    },
+    "010": {
+      "category": "간식",
+      "delivery": "19800",
+      "detailImg": "https://firebasestorage.googleapis.com/v0/b/project-e9ee0.appspot.com/o/detail_09.jpg?alt=media&token=705c8cc0-f4f4-448b-8b54-772c6d5f1461",
+      "id": "010",
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-e9ee0.appspot.com/o/item09.png?alt=media&token=cadd35c0-6661-4ad4-8b30-03f2d142c4ce",
+      "isBest": false,
+      "isWeekly": true,
+      "price": "13010",
+      "text": "",
+      "title": "제로랩스 반려동물 꽁꽁가득 동결건조 간식"
+    },
+    "011": {
+      "category": "위생",
+      "delivery": "19800",
+      "detailImg": "https://firebasestorage.googleapis.com/v0/b/project-e9ee0.appspot.com/o/detail_10.jpg?alt=media&token=dc020106-cfe0-4a40-961a-249d9bd464c3",
+      "id": "011",
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-e9ee0.appspot.com/o/item10.png?alt=media&token=36e117bd-5cdb-447b-afb9-63011e1fd8e9",
+      "isBest": false,
+      "isWeekly": false,
+      "price": "12510",
+      "text": "",
+      "title": "모모팜 슬림 쉐이빙 아스펜 베딩"
+    },
+    "012": {
+      "category": "의약품",
+      "delivery": "19800",
+      "detailImg": "https://firebasestorage.googleapis.com/v0/b/project-e9ee0.appspot.com/o/detail_11.jpg?alt=media&token=49ca22d7-41ad-4fa8-98bb-adf707168966",
+      "id": "012",
+      "image": "https://firebasestorage.googleapis.com/v0/b/project-e9ee0.appspot.com/o/item11.png?alt=media&token=50e263ff-ad38-48b0-a2f0-08eb0b8ae97a",
+      "isBest": false,
+      "isWeekly": false,
+      "price": "1000",
+      "text": "",
+      "title": "소동물용 분유 영양보충제 파우더밀크"
+    }
+  }
+}

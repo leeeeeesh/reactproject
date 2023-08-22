@@ -1,0 +1,90 @@
+div#mobileitem_wrap {
+  margin-top: -1px;
+  margin-bottom: 8vw;
+
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+section#mobileitem {
+  position: relative;
+  left: 0;
+  top: 0;
+
+  padding: 0 4.6vw 4.6vw;
+  width: 86.7%;
+  background: #8B5848;
+
+  border-radius: 0 0 4vw 4vw;
+  box-sizing: border-box;
+}
+
+h2.mobileitem_titie {
+  margin-bottom: 4.6vw;
+  font: 700 4.3vw 'Noto Sans KR';
+  color: #fff;
+}
+
+a.mobileitem_more {
+  position: absolute;
+  top: 0;
+  right: 4.6vw;
+
+  font: 400 3.07vw 'Noto Sans KR';
+  color: #fff;
+}
+
+
+ul#mobileitem_list {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul#mobileitem_list>li {
+  padding: 4.15vw 0;
+  /* width: 43vw; */
+  width: 37vw;
+  background: #FFF8F2;
+  border-radius: 2vw;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+ul#mobileitem_list>li>a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+div.mobileitem_img {
+  padding: 0 6.92vw 4.15vw;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+div.mobileitem_img>img {
+  display: block;
+  width: 100%;
+  filter: drop-shadow(0 2.1vw 1.3vw rgba(0,0,0,0.4));
+}
+
+ul#mobileitem_list>li>a>p {
+  padding: 0 2.6vw;
+  box-sizing: border-box;
+}
+
+p.mobileitem_category {
+  font: 500 2.76vw 'Noto Sans KR';
+  color: #8B5848;
+}
+
+p.mobileitem_title {
+  font: 600 3.07vw 'Noto Sans KR';
+  color: #333;
+}
+
+p.mobileitem_price {
+  font: 300 2.76vw 'Noto Sans KR';
+  color: #333;
+}
