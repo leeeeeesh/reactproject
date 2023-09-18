@@ -39,7 +39,7 @@ export default function Header() {
   const {user} = useAuthContext()
 
 
-  console.log(user)
+  console.log('유저정보 확인',user)
 
 
   return (

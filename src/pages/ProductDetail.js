@@ -1,18 +1,17 @@
 import axios from 'axios'
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useRef, useState } from 'react'
 import { Link, useLocation, useNavigate, useParams } from 'react-router-dom'
 import Count from '../components/count/Count'
 import useProducts from '../hooks/useProducts'
 import styles from './productdetail.module.css'
 import regExp from '../util/regExp'
 import { getProductDetail } from '../api/firebase'
+import { gsap } from 'gsap';
 
 export default function ProductDetail() {
-
   //const {productId} = useParams()
 
   // const [allProduct] = useProducts()
-
 
   const [price, setPrice]=useState(1)
 
@@ -25,17 +24,13 @@ export default function ProductDetail() {
   }
 
   const {productId} = useParams()
-
   const [allProduct] = useProducts()//직접만든 훅
-
   const [productItem, setProductItem] = useState({})
-
+  const [clickImages, setClickImages] = useState([])
+  const [selectClickImg,setSelectClickImg] = useState('001')
   // const similarMap = allProduct.filter((item)=>(item.category===allProduct[`${productId}`].category && item.id !==allProduct[`${productId}`].id))
-  
   const [similarMap, setSimilarMap] = useState([])
-
-  
-  
+  const changeRef = useRef()
 
   useEffect(()=>{
     //const productItem = getProductDetail(productId)
@@ -44,6 +39,8 @@ export default function ProductDetail() {
       
       setProductItem(res)     // 주의 res.data 아님 
 
+      setClickImages(Object.values(res.clickImg)) //Object는 객체를 배열로 바꾸는거
+      console.log(clickImages)
 
       const similarMap = allProduct.filter((item)=>(item.category===res.category && item.id !==res.id))
       //여기서 처음에 res.category 말고 productItem.category 로 했었는데 이러면 바뀐거를 가져오는게 아니고 밖에서 처음에 정해졌던것을 그대로 가져오는거라 바뀐값인 res를 써줘야한다. 그래야 클릭했을때 계속 바뀜
@@ -58,8 +55,7 @@ export default function ProductDetail() {
   },[allProduct, productId])
   // },[allProduct])
 
-
-
+  
   const {pathname} = useLocation()
 
   useEffect(()=>{
@@ -71,8 +67,6 @@ export default function ProductDetail() {
   // const similarMap = allProduct.filter((item)=>(item.category===allProduct[`${productId}`].category &&item.id !==allProduct[`${productId}`].id))
 
   const navigate = useNavigate()
-
-  
 
 
 
@@ -90,8 +84,39 @@ export default function ProductDetail() {
          
             <section id={styles.detail}>
               <h2 className='hidden'>상품 상세페이지</h2>
-              <div id={styles.detail_img}>
-                <img src={productItem.image}/>
+
+              <div id={styles.detail_img_wrap}>
+                <div id={styles.detail_img}>
+                  {/* <img src={productItem.image}/> */}
+                  <img src={productItem.image}/>
+                </div>
+
+                <ul id={styles.detail_clickimg_list}>
+                  {/* <li>
+                    <img src={productItem.image}/>
+                  </li> */}
+
+
+                  {
+                    clickImages.map((item)=>(
+                    // productItem.clickImg?.map((item)=>(
+                      <li key={item.id} className={`${selectClickImg===item.id&&styles.selected}`} onClick={
+                        ()=>{
+                          setProductItem({...productItem, image:item.image})
+                          setSelectClickImg(item.id)
+                        }
+                      }>
+                        <img src={item.image}/>
+                      </li>
+                    ))
+                  }
+
+                  {/* ref가 map으로 돌린거에 있으면 마지막꺼만 잡는다 그래서 각각 하나씩 잡으려면
+                  ref={ref이름} 이렇게 말고 아래처럼
+                  ref={(element) => ref이름.current[item.id] = element}
+                  */}
+                  
+                </ul>
               </div>
 
               <div id={styles.detail_buy}>

@@ -16,9 +16,15 @@ section#detail {
   width: 1200px;
 }
 
-div#detail_img {
-  padding: 20px;
+
+div#detail_img_wrap {
   width: 430px;
+}
+
+div#detail_img {
+  margin-bottom: 30px;
+  padding: 20px;
+  width: 100%;
   min-height: 430px;
   box-sizing: border-box;
   background: #f5f5f5;
@@ -27,6 +33,29 @@ div#detail_img {
 div#detail_img>img {
   display: block;
   width: 100%;
+}
+
+ul#detail_clickimg_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul#detail_clickimg_list>li {
+  margin: 0 5px 5px 0;
+  width: 80px;
+  height: 80px;
+  background: #eee;
+}
+
+ul#detail_clickimg_list>li.selected {
+  border: 3px solid #8B5848;
+  box-sizing: border-box;
+}
+
+ul#detail_clickimg_list>li>img {
+  padding: 6px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 div#detail_buy {
